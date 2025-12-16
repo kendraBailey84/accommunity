@@ -1,0 +1,6 @@
+{
+  "scope": "x_snc_amoila_conne",
+  "scopeId": "f44666e293b93e90460f79b877373cdb",
+  "name": "Amoila Connect",
+  "tsconfigPath": "./src/server/tsconfig.json"
+}

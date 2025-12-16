@@ -1,0 +1,18 @@
+{
+    "name": "x-snc-amoila-connect",
+    "version": "1.0.0",
+    "description": "[BUILD AGENT GENERATED]:  A comprehensive fitness community application for Amoila's training programs, featuring member profiles, content categorization, and community engagement tools",
+    "license": "UNLICENSED",
+    "scripts": {
+        "build": "now-sdk build",
+        "deploy": "now-sdk install",
+        "transform": "now-sdk transform",
+        "types": "now-sdk dependencies"
+    },
+    "devDependencies": {
+        "@servicenow/sdk": "4.1.1",
+        "@servicenow/glide": "26.0.1",
+        "eslint": "8.50.0",
+        "@servicenow/eslint-plugin-sdk-app-plugin": "4.1.1"
+    }
+}
