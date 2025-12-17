@@ -22,8 +22,9 @@ export default function Header({ navigate, currentView }) {
     if (section === 'knowledge-base') {
       window.location.href = '/x_snc_amoila_conne_kb.do';
     } else if (section === 'support') {
-      // Navigate to support page (if exists) or home with support hash
-      window.location.href = '/x_snc_amoila_conne_amoila.do#support';
+      window.location.href = '/x_snc_amoila_conne_support.do';
+    } else if (section === 'dashboard') {
+      window.location.href = '/x_snc_amoila_conne_dashboard.do';
     } else if (section === 'profile') {
       // Navigate to profile page (if exists) or home with profile hash
       window.location.href = '/x_snc_amoila_conne_amoila.do#profile';
@@ -31,6 +32,8 @@ export default function Header({ navigate, currentView }) {
       window.location.href = '/x_snc_amoila_conne_amoila.do';
     } else if (section === 'faqs') {
       window.location.href = '/x_snc_amoila_conne_faq.do';
+    } else if (section === 'my-tickets') {
+      window.location.href = '/x_snc_amoila_conne_support.do#my-tickets';
     } else {
       navigate(section);
     }
@@ -79,6 +82,14 @@ export default function Header({ navigate, currentView }) {
                   onClick={() => handleNavClick('profile')}
                 >
                   My Profile
+                </button>
+              </li>
+              <li>
+                <button 
+                  className={`nav-link ${currentView === 'dashboard' ? 'active' : ''}`}
+                  onClick={() => handleNavClick('dashboard')}
+                >
+                  Dashboard
                 </button>
               </li>
             </ul>
@@ -152,6 +163,14 @@ export default function Header({ navigate, currentView }) {
                   onClick={() => handleNavClick('profile')}
                 >
                   My Profile
+                </button>
+              </li>
+              <li>
+                <button 
+                  className={`mobile-nav-link ${currentView === 'dashboard' ? 'active' : ''}`}
+                  onClick={() => handleNavClick('dashboard')}
+                >
+                  Dashboard
                 </button>
               </li>
             </ul>

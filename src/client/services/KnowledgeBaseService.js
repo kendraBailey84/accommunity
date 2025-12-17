@@ -57,10 +57,13 @@ export class KnowledgeBaseService {
     }
   }
 
-  async getArticleBySlug(slug) {
+  async getArticleBySlug(slugOrId) {
     try {
-      const response = await fetch(
-        `/api/now/table/${this.tableName}?sysparm_display_value=all&sysparm_query=slug=${slug}^published=true`,
+      // First try to find by slug, then by sys_id
+      let query = `published=true^slug=${slugOrId}`;
+      
+      let response = await fetch(
+        `/api/now/table/${this.tableName}?sysparm_display_value=all&sysparm_query=${query}`,
         {
           headers: {
             "Accept": "application/json",
@@ -69,12 +72,25 @@ export class KnowledgeBaseService {
         }
       );
 
-      if (!response.ok) {
-        throw new Error('Failed to fetch article');
+      let data = await response.json();
+      let article = data.result?.[0];
+      
+      // If not found by slug, try by sys_id
+      if (!article) {
+        query = `published=true^sys_id=${slugOrId}`;
+        response = await fetch(
+          `/api/now/table/${this.tableName}?sysparm_display_value=all&sysparm_query=${query}`,
+          {
+            headers: {
+              "Accept": "application/json",
+              "X-UserToken": window.g_ck
+            }
+          }
+        );
+        
+        data = await response.json();
+        article = data.result?.[0];
       }
-
-      const data = await response.json();
-      const article = data.result?.[0];
       
       if (article) {
         // Increment view count

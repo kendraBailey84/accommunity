@@ -173,6 +173,10 @@ declare global {
                         table: 'x_snc_amoila_conne_category'
                         id: '1efb4744eec440d3af7e85f65873f827'
                     }
+                    'dashboard-page': {
+                        table: 'sys_ui_page'
+                        id: 'd6a79d00bf4d4a5c8941bcc52e73dad2'
+                    }
                     faq_645_access: {
                         table: 'x_snc_amoila_conne_faq'
                         id: '6dad7d42790e4273be31eb4f25407144'
@@ -293,6 +297,30 @@ declare global {
                         table: 'sys_module'
                         id: '4ef25ec04e1f4ddc89cd1e9bfe10181e'
                     }
+                    'support-page': {
+                        table: 'sys_ui_page'
+                        id: 'cf13207fa0f74c908330f4c822ac3de8'
+                    }
+                    'x_snc_amoila_conne/app-B9dqcTxv': {
+                        table: 'sys_ux_lib_asset'
+                        id: 'e4001176e3bf494b9248e0b9c0a8e51f'
+                        deleted: true
+                    }
+                    'x_snc_amoila_conne/app-B9dqcTxv.js.map': {
+                        table: 'sys_ux_lib_asset'
+                        id: '027bafccf1c747fb960f20f7e2445025'
+                        deleted: true
+                    }
+                    'x_snc_amoila_conne/app-BlPpxaMN': {
+                        table: 'sys_ux_lib_asset'
+                        id: 'd39a0d00df5145a0bf4638d69b3bf5ce'
+                        deleted: true
+                    }
+                    'x_snc_amoila_conne/app-BlPpxaMN.js.map': {
+                        table: 'sys_ux_lib_asset'
+                        id: 'fc176340925d4825bf11120fd929a778'
+                        deleted: true
+                    }
                     'x_snc_amoila_conne/app-Bwidf1M3': {
                         table: 'sys_ux_lib_asset'
                         id: 'f5e27894e1824206931f40f141c08df7'
@@ -303,13 +331,61 @@ declare global {
                         id: '29931e0b6ec441c391a9106f7e01d978'
                         deleted: true
                     }
+                    'x_snc_amoila_conne/app-Bx-ftwvt': {
+                        table: 'sys_ux_lib_asset'
+                        id: '52c47fa7a823402e9c44e13f17173aa2'
+                    }
+                    'x_snc_amoila_conne/app-Bx-ftwvt.js.map': {
+                        table: 'sys_ux_lib_asset'
+                        id: '6d31f8392ea5484d899854b97f1a129e'
+                    }
+                    'x_snc_amoila_conne/app-C3XSsvHp': {
+                        table: 'sys_ux_lib_asset'
+                        id: '8ef1710e147944c0bb372ba0d4e94818'
+                        deleted: true
+                    }
+                    'x_snc_amoila_conne/app-C3XSsvHp.js.map': {
+                        table: 'sys_ux_lib_asset'
+                        id: 'c4f700ae2c764860b1a062946d386882'
+                        deleted: true
+                    }
+                    'x_snc_amoila_conne/app-D2sWR5xk': {
+                        table: 'sys_ux_lib_asset'
+                        id: 'ea59caa345df425baf322eda85b14032'
+                        deleted: true
+                    }
+                    'x_snc_amoila_conne/app-D2sWR5xk.js.map': {
+                        table: 'sys_ux_lib_asset'
+                        id: '53d7c645d0554251ac25ddfab84ca3a7'
+                        deleted: true
+                    }
                     'x_snc_amoila_conne/app-DRfDy9ZZ': {
                         table: 'sys_ux_lib_asset'
                         id: '0327e83875f64cdba327006928a6514b'
+                        deleted: true
                     }
                     'x_snc_amoila_conne/app-DRfDy9ZZ.js.map': {
                         table: 'sys_ux_lib_asset'
                         id: '418764551d6548f7bbc7287887c0e33b'
+                        deleted: true
+                    }
+                    'x_snc_amoila_conne/app-TR0jGf6a': {
+                        table: 'sys_ux_lib_asset'
+                        id: 'ab6683172d6a41d59c06885157755de6'
+                        deleted: true
+                    }
+                    'x_snc_amoila_conne/app-TR0jGf6a.js.map': {
+                        table: 'sys_ux_lib_asset'
+                        id: 'cd1c8e535acb4a0c8c493eb792e852ab'
+                        deleted: true
+                    }
+                    'x_snc_amoila_conne/dashboard-main': {
+                        table: 'sys_ux_lib_asset'
+                        id: '6ca45856a0c54e068ed8ffa74c6f640d'
+                    }
+                    'x_snc_amoila_conne/dashboard-main.js.map': {
+                        table: 'sys_ux_lib_asset'
+                        id: '13a384986e2540f3b0d789461570d68a'
                     }
                     'x_snc_amoila_conne/faq-main': {
                         table: 'sys_ux_lib_asset'
@@ -318,6 +394,14 @@ declare global {
                     'x_snc_amoila_conne/faq-main.js.map': {
                         table: 'sys_ux_lib_asset'
                         id: 'a3370a17429f4453acf39eec7f9c1852'
+                    }
+                    'x_snc_amoila_conne/FaqService-CKX5BATp': {
+                        table: 'sys_ux_lib_asset'
+                        id: '4eddf51505ba409591b282c7a7449ac1'
+                    }
+                    'x_snc_amoila_conne/FaqService-CKX5BATp.js.map': {
+                        table: 'sys_ux_lib_asset'
+                        id: 'a3dc5923dffd4cd38a0f2d5c57229a03'
                     }
                     'x_snc_amoila_conne/kb-main': {
                         table: 'sys_ux_lib_asset'
@@ -334,6 +418,14 @@ declare global {
                     'x_snc_amoila_conne/main.js.map': {
                         table: 'sys_ux_lib_asset'
                         id: '84ac0f090dea449d926f7f8180e2e0b1'
+                    }
+                    'x_snc_amoila_conne/support-main': {
+                        table: 'sys_ux_lib_asset'
+                        id: '94ad93928af34054871bf3b0374aff5a'
+                    }
+                    'x_snc_amoila_conne/support-main.js.map': {
+                        table: 'sys_ux_lib_asset'
+                        id: 'b794f3d086254375a916bf791dcfc4fb'
                     }
                 }
                 composite: [

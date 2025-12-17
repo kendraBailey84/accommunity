@@ -29,6 +29,8 @@ export default function App() {
       window.location.href = '/x_snc_amoila_conne_kb.do';
     } else if (view === 'faqs') {
       window.location.href = '/x_snc_amoila_conne_faq.do';
+    } else if (view === 'support') {
+      window.location.href = '/x_snc_amoila_conne_support.do';
     } else {
       setCurrentView(view);
       window.location.hash = view;

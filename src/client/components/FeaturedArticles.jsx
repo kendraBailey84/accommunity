@@ -66,10 +66,10 @@ export default function FeaturedArticles() {
     }
   };
 
-  const handleArticleClick = (articleId) => {
-    // Navigate to article detail view
-    console.log('Opening article:', articleId);
-    // In a real implementation, this would navigate to the article detail
+  const handleArticleClick = (article) => {
+    // Use slug if available, otherwise fallback to sys_id
+    const slug = display(article.slug) || value(article.sys_id);
+    window.location.href = `/x_snc_amoila_conne_kb.do#article/${slug}`;
   };
 
   if (loading) {
@@ -100,7 +100,7 @@ export default function FeaturedArticles() {
             <article 
               key={value(article.sys_id)}
               className="article-card"
-              onClick={() => handleArticleClick(value(article.sys_id))}
+              onClick={() => handleArticleClick(article)}
             >
               <div className="article-category">
                 {display(article.category)}
@@ -134,7 +134,10 @@ export default function FeaturedArticles() {
         </div>
         
         <div className="section-footer">
-          <button className="btn btn-outline">
+          <button 
+            className="btn btn-outline"
+            onClick={() => window.location.href = '/x_snc_amoila_conne_kb.do'}
+          >
             Browse All Articles
           </button>
         </div>

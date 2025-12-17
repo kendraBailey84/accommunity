@@ -12,7 +12,7 @@ export default function QuickActions({ navigate }) {
           <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
         </svg>
       ),
-      action: () => navigate('knowledge-base'),
+      action: () => window.location.href = '/x_snc_amoila_conne_kb.do',
       color: '#4A90E2'
     },
     {
@@ -27,7 +27,7 @@ export default function QuickActions({ navigate }) {
           <polyline points="10,9 9,9 8,9"></polyline>
         </svg>
       ),
-      action: () => navigate('support'),
+      action: () => window.location.href = '/x_snc_amoila_conne_support.do',
       color: '#F39C12'
     },
     {
@@ -41,8 +41,9 @@ export default function QuickActions({ navigate }) {
         </svg>
       ),
       action: () => {
-        // This would trigger the floating chat
-        console.log('Opening chat...');
+        // Trigger the floating chat widget
+        const event = new CustomEvent('openChat');
+        window.dispatchEvent(event);
       },
       color: '#27AE60'
     }
