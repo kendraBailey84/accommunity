@@ -103,3 +103,100 @@ export const faqsModule = Record({
     order: 500
   }
 })
+
+// Support Tickets Module (list view)
+export const supportTicketsModule = Record({
+  $id: Now.ID['amoila_support_tickets_module'],
+  table: 'sys_app_module',
+  data: {
+    title: 'Support Tickets',
+    application: amoimlaConnectMenu.$id,
+    link_type: 'LIST',
+    name: 'x_snc_amoila_conne_support_ticket',
+    hint: 'View and manage support tickets',
+    description: 'Customer support ticket system',
+    active: true,
+    order: 600
+  }
+})
+
+// Open Tickets Module (filtered list view)
+export const openTicketsModule = Record({
+  $id: Now.ID['amoila_open_tickets_module'],
+  table: 'sys_app_module',
+  data: {
+    title: 'Open Tickets',
+    application: amoimlaConnectMenu.$id,
+    link_type: 'LIST',
+    name: 'x_snc_amoila_conne_support_ticket',
+    filter: 'stateNOTIN resolved,closed',
+    hint: 'View open support tickets',
+    description: 'Active support tickets requiring attention',
+    active: true,
+    order: 700
+  }
+})
+
+// Achievements Module (list view)
+export const achievementsModule = Record({
+  $id: Now.ID['amoila_achievements_module'],
+  table: 'sys_app_module',
+  data: {
+    title: 'Achievements',
+    application: amoimlaConnectMenu.$id,
+    link_type: 'LIST',
+    name: 'x_snc_amoila_conne_achievement',
+    hint: 'Manage achievement system',
+    description: 'Configure achievements and rewards',
+    active: true,
+    order: 800
+  }
+})
+
+// XP Log Module (list view)
+export const xpLogModule = Record({
+  $id: Now.ID['amoila_xp_log_module'],
+  table: 'sys_app_module',
+  data: {
+    title: 'XP Log',
+    application: amoimlaConnectMenu.$id,
+    link_type: 'LIST',
+    name: 'x_snc_amoila_conne_xp_log',
+    hint: 'View XP transactions',
+    description: 'Track all XP earnings and member progress',
+    active: true,
+    order: 900
+  }
+})
+
+// Chat Sessions Module (list view)
+export const chatSessionsModule = Record({
+  $id: Now.ID['amoila_chat_sessions_module'],
+  table: 'sys_app_module',
+  data: {
+    title: 'Chat Sessions',
+    application: amoimlaConnectMenu.$id,
+    link_type: 'LIST',
+    name: 'x_snc_amoila_conne_chat_session',
+    hint: 'Monitor chat sessions',
+    description: 'View and manage customer chat conversations',
+    active: true,
+    order: 1000
+  }
+})
+
+// Chat Intents Module (list view)
+export const chatIntentsModule = Record({
+  $id: Now.ID['amoila_chat_intents_module'],
+  table: 'sys_app_module',
+  data: {
+    title: 'Chat Intents',
+    application: amoimlaConnectMenu.$id,
+    link_type: 'LIST',
+    name: 'x_snc_amoila_conne_chat_intent',
+    hint: 'Manage AI chat responses',
+    description: 'Configure automated chat responses and actions',
+    active: true,
+    order: 1100
+  }
+})
